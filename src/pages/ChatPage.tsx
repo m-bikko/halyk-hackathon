@@ -46,6 +46,10 @@ export const ChatPage = () => {
             const decodedChunk = decoder.decode(value, {stream: true});
             if (decodedChunk)
                 setAnswer(answer => (answer ? answer : "") + decodedChunk);
+            ref.current?.scrollIntoView({
+                behavior: "smooth",
+                block: "end",
+            });
         }
         setRequestText(undefined)
     }
@@ -55,11 +59,10 @@ export const ChatPage = () => {
         if (messages.length) {
             ref.current?.scrollIntoView({
                 behavior: "smooth",
-                block: "start",
+                block: "end",
             });
-            console.log(messages)
         }
-    }, [messages]);
+    }, [messages.length]);
 
 
     return <div className={'w-full min-h-screen h-screen bg-[#D8D8D8] overflow-auto'}>
@@ -97,7 +100,7 @@ export const ChatPage = () => {
                 </button>
             </div>
         </div>
-        <div ref={ref} className={'h-10 w-full bg-gray-700'}></div>
+        <div ref={ref} className={'w-full'}></div>
 
     </div>
 }
