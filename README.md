@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# Halyk Life - Веб-приложение для страхования жизни
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Введение
 
-## Available Scripts
+Данный репозиторий содержит исходный код для веб-приложения "Halyk Life" - инновационного приложения для страхования жизни с дополнительной функцией чат-бота.
 
-In the project directory, you can run:
+## Описание Проекта
 
-### `npm start`
+"Halyk Life" предоставляет возможность подбора страхового полиса на жизнь, используя интегрированный калькулятор страховых процентов. Пользователи также имеют доступ к чат-боту для получения консультаций и ответов на вопросы в реальном времени.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Функциональные Характеристики
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 1. Регистрация и Авторизация
 
-### `npm test`
+- Пользователи могут зарегистрироваться, создав учетную запись с базовой информацией.
+- Аутентификация осуществляется посредством электронной почты и пароля.
+- Восстановление пароля через электронную почту.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Пользовательский Кабинет
 
-### `npm run build`
+- Просмотр и редактирование личной информации.
+- Управление страховыми полисами и их параметрами.
+- История платежей и страховых случаев.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Калькулятор Страховых Процентов
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Возможность расчета страховых премий на основе личных данных.
+- Подбор оптимальных вариантов страховых полисов.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 4. Чат-Бот для Консультаций
 
-### `npm run eject`
+- Интегрированный чат-бот для ответов на вопросы пользователей.
+- Автоматизированные консультации по страхованию жизни.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Технологический Стек
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Frontend: TypescriptJS
+- Backend: ExpressJS
+- База данных: SQL
+- Чат-Бот: Trained model of AI
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Безопасность и Конфиденциальность
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Шифрование данных с использованием HTTPS.
+- Защита от SQL-инъекций и межсайтовых атак.
+- Политика конфиденциальности, соответствующая законодательству.
 
-## Learn More
+## Тестирование
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Unit-тестирование с использованием Jest и Enzyme.
+- Интеграционное и системное тестирование перед каждым релизом.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Поддержка и Обновления
+
+- Поддержка пользователей через электронную почту и онлайн-чат.
+- Регулярные обновления функциональности с учетом обратной связи.
