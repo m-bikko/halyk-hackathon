@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css'
 import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-dom";
-import {WelcomePage} from "./WelcomePage";
-import {ChatPage} from "./ChatPage";
+import {WelcomePage} from "./pages/WelcomePage";
+import {ChatPage} from "./pages/ChatPage";
 import MainApp from "./pages/MainApp";
 import BuyPolis from "./pages/BuyPolis";
 

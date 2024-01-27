@@ -1,5 +1,5 @@
 import React from "react";
-import {HeaderWithLogo} from "./components/HeaderWithLogo";
+import {HeaderWithLogo} from "../components/HeaderWithLogo";
 
 export const WelcomePage = () => {
     return <>
