@@ -1,0 +1,7 @@
+.robot-svg rect{
+    transition: all 0.5s cubic-bezier(.76,1,0,1.85); /* Добавление плавной анимации для всех свойств */
+}
+
+.robot-svg rect.hovered {
+    height: 25px; /* Задание желаемой высоты при наведении */;
+}

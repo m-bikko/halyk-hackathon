@@ -1,13 +1,5 @@
 import React from 'react';
 
-import {
-    MainContainer,
-    ChatContainer,
-    MessageList,
-    Message,
-    MessageInput,
-    TypingIndicator,
-} from '@chatscope/chat-ui-kit-react';
 const MainApp = () => {
     return (
         <div className="bg-[#F0F0F0] flex flex-col justify-center items-center">

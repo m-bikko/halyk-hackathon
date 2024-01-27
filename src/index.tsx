@@ -5,6 +5,8 @@ import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-d
 import {WelcomePage} from "./pages/WelcomePage";
 import {ChatPage} from "./pages/ChatPage";
 import MainApp from "./pages/MainApp";
+import LifePersona from "./pages/LifePersona";
+import BuyPolis from "./pages/BuyPolis";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -21,7 +23,15 @@ const routes = createBrowserRouter([
     },
     {
         path: '/main-app',
-        element: <MainApp/>
+        element: <MainApp/>,
+    },
+    {
+        path: '/life-person',
+        element: <LifePersona/>,
+    },
+    {
+        path: '/buy-polis',
+        element: <BuyPolis/>,
     },
 ])
 
