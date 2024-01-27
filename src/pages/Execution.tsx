@@ -55,7 +55,7 @@ const Execution = () => {
                     onChange={handleDateChange}
                     className="p-2 outline-0"
                 />
-                <div className=" absolute right-6">
+                <div className=" absolute right-2">
                     <img src="/icons/calendar.svg"/>
                 </div>
             </div>

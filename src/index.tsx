@@ -7,6 +7,10 @@ import {ChatPage} from "./pages/ChatPage";
 import MainApp from "./pages/MainApp";
 import LifePersona from "./pages/LifePersona";
 import BuyPolis from "./pages/BuyPolis";
+import Execution from "./pages/Execution";
+import ExecutionSecond from "./pages/ExecutionSecond";
+import ExecutionThird from "./pages/ExecutionThird";
+import LifePersona from "./pages/LifePersona";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -32,7 +36,7 @@ const routes = createBrowserRouter([
     {
         path: '/buy-polis',
         element: <BuyPolis/>,
-    },
+    }
 ])
 
 root.render(
