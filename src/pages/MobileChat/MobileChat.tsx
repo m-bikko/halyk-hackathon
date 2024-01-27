@@ -1,20 +1,13 @@
 import React from 'react';
 import './MobileChat.css';
-import back from "../../images/left.svg";
-import logo from "../../images/haluk-life.svg"
-import like from "../../images/like.svg"
-import dislike from "../../images/dislike.svg"
-import right from "../../images/right.svg"
-import plus from "../../images/plus.svg"
-import plane from "../../images/plane.svg"
 
 const MobileChat = () => {
     return (
         <div className="mobile-chat">
             <div className="header">
-                <img className="back" src={back} alt={``}/>
+                <img className="back" src="/icons/left.svg" alt={``}/>
                 <div className="logo">
-                    <img src={logo} alt={``}/>
+                    <img src="/icons/haluk-life.svg.svg" alt={``}/>
                 </div>
             </div>
 
@@ -39,14 +32,14 @@ const MobileChat = () => {
                     For example, you can tell me your preferences in genre, mood, or even the actors you love. Let's start an adventure in the world of cinema!
                 </p>
                 <div className="like-box">
-                    <img src={like} alt={``}/>
-                    <img src={dislike} alt={``}/>
+                    <img src="/icons/like.svg" alt={``}/>
+                    <img src="/icons/dislike.svg" alt={``}/>
                 </div>
             </div>
 
             <div className="library">
                 <h1>Genre Library</h1>
-                <img src={right}/>
+                <img src="/icons/right.svg"/>
             </div>
 
             <div className="buttons">
@@ -62,10 +55,10 @@ const MobileChat = () => {
 
                 <div className="input-box">
                     <input type="text" placeholder="Type your question..."/>
-                    <img src={plus}/>
+                    <img src="/icons/plus.svg"/>
                 </div>
                 <div className="plane-circle">
-                    <img className="plane" src={plane}/>
+                    <img className="plane" src="/icons/plane.svg"/>
                 </div>
             </div>
         </div>
