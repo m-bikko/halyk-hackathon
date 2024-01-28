@@ -68,7 +68,7 @@ export const ChatPage = () => {
     return <div className={'w-full h-screen bg-gradient overflow-auto'}>
         <HeaderWithLogo borderColor={"border-green-700"}/>
         <div className={'m-auto text-center bg-white w-fit p-3 rounded-full mt-6'}>
-            <a href="/main-app" className={``}>Перейти в приложение</a>
+            <a href="/interactive-page-1" className={``}>Перейти в приложение</a>
         </div>
         <div
             className={`flex flex-col justify-between max-w-2xl border-2 border-transparent m-auto mt-10
