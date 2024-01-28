@@ -5,6 +5,10 @@ import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-d
 import {WelcomePage} from "./pages/WelcomePage";
 import {ChatPage} from "./pages/ChatPage";
 import MainApp from "./pages/MainApp";
+import Execution from "./pages/Execution";
+import ExecutionSecond from "./pages/ExecutionSecond";
+import ExecutionThird from "./pages/ExecutionThird";
+import LifePersona from "./pages/LifePersona";
 import BuyPolis from "./pages/BuyPolis";
 
 const root = ReactDOM.createRoot(
