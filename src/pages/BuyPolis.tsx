@@ -1,9 +1,11 @@
 import React from 'react';
 import {Polis} from "../components/Polis";
+import {Bottom} from "../components/Bottom";
 
 const BuyPolis = () => {
     return (
-        <div className="bg-[#F0F0F0] flex flex-col justify-center items-center overflow-y-auto overflow-x-hidden">
+        <div
+            className="flex flex-col justify-center items-center overflow-y-auto overflow-x-hidden w-[430px] bg-[#F0F0F0] relative m-auto">
             <header className="w-full flex justify-between pl-2 pr-2 pt-2">
                 <div className="flex items-center gap-3">
                     <div className="p-2 flex justify-center items-center border border-[#F0F0F0] bg-[#fff] rounded-lg">
@@ -56,7 +58,8 @@ const BuyPolis = () => {
                 <h1 className="w-full text-left text-[20px] ml-8 pt-6 font-bold">Защита</h1>
                 <div className="w-[95%] my-4 py-4 flex flex-col justify-center items-center bg-[#fff] rounded-xl">
                     <div className="w-[90%] flex my-2">
-                        <img className="w-[80px] h-[80px] object-cover rounded-lg" src="/images/Rectangle%207%20(6).png"/>
+                        <img className="w-[80px] h-[80px] object-cover rounded-lg"
+                             src="/images/Rectangle%207%20(6).png"/>
                         <div className="ml-3">
                             <h3 className="text-[18px] font-bold">Халык Тумар</h3>
                             <p className="text-[12px] text-[#888888]">Смешанное страхование жизни за 5 минут для
@@ -67,7 +70,8 @@ const BuyPolis = () => {
 
                     </div>
                     <div className="w-[90%] flex my-2">
-                        <img className="w-[80px] h-[80px] object-cover rounded-lg" src="/images/Rectangle%207%20(7).png"/>
+                        <img className="w-[80px] h-[80px] object-cover rounded-lg"
+                             src="/images/Rectangle%207%20(7).png"/>
                         <div className="ml-3">
                             <h3 className="text-[18px] font-bold">Страхование заемщиков</h3>
                             <p className="text-[12px] text-[#888888]">Смешанное страхование жизни за 5 минут для
@@ -102,24 +106,8 @@ const BuyPolis = () => {
             </div>
 
 
-            <div className="fixed bottom-0 w-[100%] bg-[#F7F7F7] p-4 flex justify-between">
-                <div className="w-1/4 flex flex-col justify-center items-center">
-                    <img src="/icons/main.svg"/>
-                    <p className="text-[10px]">Главная</p>
-                </div>
-                <div className="w-1/4 flex flex-col justify-center items-center">
-                    <img src="/icons/buy-polis.svg"/>
-                    <p className="text-[10px]">Мои полисы</p>
-                </div>
-                <div className="w-1/4 flex flex-col justify-center items-center">
-                    <img src="/icons/insurance-case.svg"/>
-                    <p className="text-[10px]">Страховой случай</p>
-                </div>
-                <div className="w-1/4 flex flex-col justify-center items-center">
-                    <img src="/icons/login.svg"/>
-                    <p className="text-[10px]">Профиль</p>
-                </div>
-            </div>
+            <Bottom/>
+
         </div>
     );
 }

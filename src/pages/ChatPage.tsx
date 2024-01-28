@@ -2,6 +2,7 @@ import {HeaderWithLogo} from "../components/HeaderWithLogo";
 import {Message} from "../components/Message";
 import {Response} from "../components/Response";
 import React, {useEffect, useRef, useState} from "react";
+import {Robot} from "../components/Robot/Robot";
 
 
 interface MessageProps {
@@ -56,7 +57,7 @@ export const ChatPage = () => {
 
 
     useEffect(() => {
-        if (messages.length) {
+        if (messages.length > 1) {
             ref.current?.scrollIntoView({
                 behavior: "smooth",
                 block: "end",
@@ -65,13 +66,18 @@ export const ChatPage = () => {
     }, [messages.length]);
 
 
-    return <div className={'w-full min-h-screen h-screen bg-[#D8D8D8] overflow-auto'}>
+    return <div className={'w-full h-screen bg-gradient overflow-auto'}>
         <HeaderWithLogo borderColor={"border-green-700"}/>
+        <div className={'m-auto text-center bg-white w-fit p-3 rounded-full mt-6'}>
+            <a href="/main-app" className={``}>Перейти в приложение</a>
+        </div>
         <div
             className={`flex flex-col justify-between max-w-2xl border-2 border-transparent m-auto mt-10
-                p-8 rounded-3xl md:border-white md:shadow-2xl shadow-transparent min-h-full`}>
+                p-8 rounded-3xl md:border-white md:shadow-2xl shadow-transparent min-h-full bg-[#D8D8D8]`}>
             <div className={'flex flex-col'}>
-                <img src="/icons/robot.svg" alt="" className={'h-20 self-start mb-4'}/>
+                <div className={'self-start mb-4'}>
+                    <Robot h={55}/>
+                </div>
                 {
                     messages.map((message, i) => {
                             return <Message text={message.text} isMy={message.isMy} key={i}/>

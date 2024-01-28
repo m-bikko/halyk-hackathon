@@ -1,7 +1,11 @@
 import React, {useState} from "react";
 import "./Robot.css"; // Подключение файла стилей
 
-export const Robot = () => {
+interface Props {
+    h?: number
+}
+
+export const Robot = ({h}:Props) => {
     const [hovered, setHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -16,8 +20,8 @@ export const Robot = () => {
 
     return (
         <>
-            <svg width="231" height="215" viewBox="0 0 231 215" fill="none" xmlns="http://www.w3.org/2000/svg"
-                 className={`robot-svg`}
+            <svg width="auto" height={h ? h : "215"} viewBox="0 0 231 215" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 className={`robot-svg m-auto`}
                  onMouseEnter={handleMouseEnter}
                  onMouseLeave={handleMouseLeave}>
                 <g clipPath="url(#clip0_71_95)">

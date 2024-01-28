@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-gradient{
+.bg-gradient {
     background: linear-gradient(161deg, rgba(25, 227, 81, 0.77) -3.1%, rgba(0, 0, 0));
+}
+
+body {
+    background: black;
 }
 
 @layer utilities {
