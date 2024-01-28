@@ -10,6 +10,7 @@ import BuyPolis from "./pages/BuyPolis";
 import Execution from "./pages/Execution";
 import {ExecutionSecond} from "./pages/ExecutionSecond";
 import {ExecutionThird} from "./pages/ExecutionThird";
+import {InteractivePage1} from "./pages/InteractivePage1";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -47,6 +48,10 @@ const routes = createBrowserRouter([
     {
         path: '/execution-3',
         element: <ExecutionThird/>,
+    },
+    {
+        path: '/interactive-page-1',
+        element: <InteractivePage1/>
     }
 ])
 

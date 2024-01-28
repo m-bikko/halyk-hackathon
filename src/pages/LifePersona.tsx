@@ -13,10 +13,10 @@ const LifePersona = () => {
     return (
         <div
             className="flex flex-col justify-center items-center overflow-x-hidden w-[430px] bg-[#F0F0F0] relative m-auto">
-            <div className="absolute w-full top-0 left-0 flex items-center py-4 bg-[#F7F7F7]">
+            <a className="absolute w-full top-0 left-0 flex items-center py-4 bg-[#F7F7F7]" href={'/main-app'}>
                 <img className="" src="/icons/button-back.svg"/>
                 <div className="flex-1 text-[18px] font-bold text-center mr-4">Life Персона</div>
-            </div>
+            </a>
 
             <img className="w-full mt-16" src=""/>
 
@@ -56,13 +56,13 @@ const LifePersona = () => {
             </div>
 
 
-            <div className="w-full flex flex-col justify-center items-center bottom-0 mb-16 pb-6 bg-white">
+            <div className="w-full flex flex-col justify-center items-center bottom-0 mt-5">
                 <button className="w-[95%] h-[60px] text-white my-1 rounded-lg bg-[#00966B]">
                     <a href="/execution-1">
                         ОФОРМИТЬ СЕЙЧАС
                     </a>
                 </button>
-                <button className="w-[95%] h-[60px] text-[#00966B] my-1 rounded-lg bg-[#DEFFED]">КОНСУЛЬТАЦИЯ</button>
+                <a className="w-[95%] h-[60px] text-[#00966B] my-1 rounded-lg bg-[#DEFFED] flex justify-center items-center" href={'/chat'}>КОНСУЛЬТАЦИЯ</a>
 
                 <h2 className="w-[90%] pt-6 text-[18px] font-bold">Условия страхования</h2>
 

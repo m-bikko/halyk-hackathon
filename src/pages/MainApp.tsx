@@ -55,10 +55,10 @@ const MainApp = () => {
                 <div className="w-[95%] my-4 py-4 bg-[#fff] rounded-xl">
                     <h3 className="ml-4 py-2 font-bold">Наши продукты</h3>
                     <div className="flex flex-wrap justify-evenly items-start">
-                        <div className="w-[28%] h-28 my-2 rounded-xl border border-[#00966B] relative cursor-pointer">
+                        <a className="w-[28%] h-28 my-2 rounded-xl border border-[#00966B] relative cursor-pointer" href={'/life-person'}>
                             <p className="w-1/2 z-10 mt-2 ml-2 absolute">Life-Персона</p>
                             <img src="/images/tigr.png" alt="" className={'absolute bottom-0 right-0'}/>
-                        </div>
+                        </a>
                         <div
                             className="w-[28%] h-28 p-2 my-2 rounded-xl border border-[#00966B] relative cursor-pointer opacity-50">
                             <p className="w-1/2 absolute z-10">Халык-Казына</p>
