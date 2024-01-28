@@ -22,7 +22,7 @@ export const ChatPage = () => {
 
     const request = async () => {
         setAnswer(undefined)
-        const response = await fetch("https://rep-drab.vercel.app/api/aiCompletion", {
+        const response = await fetch("https://rep-drab.vercel.app/aiCompletion", {
             method: "post",
             headers: {
                 Accept: "application/json, text/plain, */*",
