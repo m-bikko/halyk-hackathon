@@ -90,7 +90,7 @@ export const ChatPage = () => {
                 {/*}*/}
                 {
                     loading ?
-                        <Message text={"Загруэка"} isMy={false}/> :
+                        <Message text={"Загрузка"} isMy={false}/> :
                         (answer ?
                                 <Message text={answer!} isMy={false}/>
                                 : ""
