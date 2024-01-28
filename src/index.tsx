@@ -5,6 +5,10 @@ import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-d
 import {WelcomePage} from "./pages/WelcomePage";
 import {ChatPage} from "./pages/ChatPage";
 import MainApp from "./pages/MainApp";
+import Execution from "./pages/Execution";
+import ExecutionSecond from "./pages/ExecutionSecond";
+import ExecutionThird from "./pages/ExecutionThird";
+import LifePersona from "./pages/LifePersona";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -23,6 +27,10 @@ const routes = createBrowserRouter([
         path: '/main-app',
         element: <MainApp/>
     },
+    {
+        path: '/life-persona',
+        element: <LifePersona/>
+    }
 ])
 
 root.render(
