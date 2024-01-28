@@ -21,7 +21,7 @@ export const ChatPage = () => {
     const refInput = useRef<HTMLInputElement>(null)
     const [loading, setLoading] = useState(false)
     ref.current?.scrollIntoView({
-        behavior: "smooth",    block: "end",
+        behavior: "smooth",    block: "start",
     });
     const request = async () => {
         setAnswer(undefined)
