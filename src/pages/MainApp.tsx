@@ -11,10 +11,10 @@ import {
 const MainApp = () => {
     return (
         <div className="bg-[#F0F0F0] flex flex-col justify-center items-center">
-            <header className="w-[100%] flex justify-between py-2">
+            <header className="w-full flex justify-between py-2">
                 <div className="flex items-center gap-3 pl-2">
                     <div className="p-2 flex justify-center items-center border border-[#F0F0F0] bg-[#fff] rounded-lg">
-                        <img className="w-[28px] h-[28px]" src="/icons/login.svg" alt={''}/>
+                        <img className="w-[28px] h-[28px]" src="/icons/login.svg"/>
                     </div>
                     <div className="flex flex-col text=[28px] font-bold">
                         <a href="#">Вход</a>
@@ -32,27 +32,27 @@ const MainApp = () => {
 
             <div className="w-[95%] my-4 py-4 flex flex-wrap items-start bg-[#fff] rounded-xl">
                 <div className="w-1/3 py-2 flex flex-col justify-center items-center">
-                    <img src="/icons/buy-polis.svg" alt={''}/>
+                    <img src="/icons/buy-polis.svg"/>
                     <p className="w-1/2 text-[12px] text-center">Купить полисы</p>
                 </div>
                 <div className="w-1/3 py-2 flex flex-col justify-center items-center">
-                    <img src="/icons/pay.svg" alt={''}/>
+                    <img src="/icons/pay.svg"/>
                     <p className="w-1/2 text-[12px] text-center">Оплатить</p>
                 </div>
                 <div className="w-1/3 py-2 flex flex-col justify-center items-center">
-                    <img src="/icons/insurance-case.svg" alt={''}/>
+                    <img src="/icons/insurance-case.svg"/>
                     <p className="w-1/2 text-[12px] text-center">Страховой случай</p>
                 </div>
                 <div className="w-1/3 py-2 flex flex-col justify-center items-center">
-                    <img src="/icons/history.svg" alt={''}/>
+                    <img src="/icons/history.svg"/>
                     <p className="w-1/2 text-[12px] text-center">Операция</p>
                 </div>
                 <div className="w-1/3 py-2 flex flex-col justify-center items-center">
-                    <img src="/icons/my-polis.svg" alt={''}/>
+                    <img src="/icons/my-polis.svg"/>
                     <p className="w-1/2 text-[12px] text-center">Мои полисы</p>
                 </div>
                 <div className="w-1/3 py-2 flex flex-col justify-center items-center">
-                    <img src="/icons/request.svg" alt={''}/>
+                    <img src="/icons/request.svg"/>
                     <p className="w-1/2 text-[12px] text-center">Заявки</p>
                 </div>
             </div>
@@ -83,6 +83,25 @@ const MainApp = () => {
 
             </div>
 
+
+            <div className="fixed bottom-0 w-[100%] bg-[#F7F7F7] p-4 flex justify-between">
+                <div className="w-1/4 flex flex-col justify-center items-center">
+                    <img src="/icons/main.svg"/>
+                    <p className="text-[10px]">Главная</p>
+                </div>
+                <div className="w-1/4 flex flex-col justify-center items-center">
+                    <img src="/icons/my-polis.svg"/>
+                    <p className="text-[10px]">Мои полисы</p>
+                </div>
+                <div className="w-1/4 flex flex-col justify-center items-center">
+                    <img src="/icons/insurance-case.svg"/>
+                    <p className="text-[10px]">Страховой случай</p>
+                </div>
+                <div className="w-1/4 flex flex-col justify-center items-center">
+                    <img src="/icons/login.svg"/>
+                    <p className="text-[10px]">Профиль</p>
+                </div>
+            </div>
         </div>
     );
 }

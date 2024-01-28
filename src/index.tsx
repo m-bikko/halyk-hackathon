@@ -5,7 +5,6 @@ import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-d
 import {WelcomePage} from "./pages/WelcomePage";
 import {ChatPage} from "./pages/ChatPage";
 import MainApp from "./pages/MainApp";
-import BuyPolis from "./pages/BuyPolis";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -24,10 +23,6 @@ const routes = createBrowserRouter([
         path: '/main-app',
         element: <MainApp/>
     },
-    {
-        path: '/buy-polis',
-        element: <BuyPolis/>
-    }
 ])
 
 root.render(
