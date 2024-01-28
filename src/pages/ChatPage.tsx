@@ -4,7 +4,6 @@ import {Response} from "../components/Response";
 import React, {useEffect, useRef, useState} from "react";
 import {Robot} from "../components/Robot/Robot";
 
-
 interface MessageProps {
     text: string,
     isMy: boolean
