@@ -9,6 +9,7 @@ import Execution from "./pages/Execution";
 import ExecutionSecond from "./pages/ExecutionSecond";
 import ExecutionThird from "./pages/ExecutionThird";
 import LifePersona from "./pages/LifePersona";
+import BuyPolis from "./pages/BuyPolis";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -28,8 +29,8 @@ const routes = createBrowserRouter([
         element: <MainApp/>
     },
     {
-        path: '/life-persona',
-        element: <LifePersona/>
+        path: '/buy-polis',
+        element: <BuyPolis/>
     }
 ])
 

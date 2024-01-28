@@ -3,7 +3,6 @@ import {Message} from "../components/Message";
 import {Response} from "../components/Response";
 import React, {useEffect, useRef, useState} from "react";
 
-
 interface MessageProps {
     text: string,
     isMy: boolean
