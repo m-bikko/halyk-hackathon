@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {ModalWindow} from "../components/ModalWindow";
 
 const MainApp = () => {
+
+    const [isPopupOpen, setPopupOpen] = useState(false);
+
+
     return (
         <div className="bg-[#F0F0F0] flex flex-col justify-center items-center">
             <header className="w-full flex justify-between py-2">
@@ -93,6 +98,15 @@ const MainApp = () => {
                     <img src="/icons/login.svg"/>
                     <p className="text-[10px]">Профиль</p>
                 </div>
+            </div>
+
+            <div className="w-full flex justify-center items-center">
+                <button className="w-[10%] text-[30px] text-white bg-[#00966B] rounded-lg border" onClick={() => setPopupOpen(true)}>Modal</button>
+
+                {isPopupOpen && (
+                    <ModalWindow isOpen={isPopupOpen} onClose={() => setPopupOpen(false)}>
+                    </ModalWindow>
+                )}
             </div>
         </div>
     );

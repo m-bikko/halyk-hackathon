@@ -5,7 +5,7 @@ interface props {
     onClose: () => void;
     children: React.ReactNode;
 }
-// Пример использования в BuyPolis.tsx
+// Пример использования в MainApp.tsx
 export const ModalWindow = ({ isOpen, onClose, children }: props) => {
     return isOpen ? (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
