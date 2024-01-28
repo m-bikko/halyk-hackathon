@@ -17,11 +17,13 @@ export const ChatPage = () => {
     }])
     const ref = useRef<HTMLDivElement>(null);
     const [answer, setAnswer] = useState<string | undefined>()
-    const [requestText, setRequestText] = useState<string | undefined>()
+    const [requestText, setRequestText] = useState<string | undefined>(undefined)
     const refInput = useRef<HTMLInputElement>(null)
+    const [loading, setLoading] = useState(false)
 
     const request = async () => {
         setAnswer(undefined)
+        setLoading(true)
         const response = await fetch("https://rep-drab.vercel.app/aiCompletion", {
             method: "post",
             headers: {
@@ -68,7 +70,7 @@ export const ChatPage = () => {
     return <div className={'w-full h-screen bg-gradient overflow-auto'}>
         <HeaderWithLogo borderColor={"border-green-700"}/>
         <div className={'m-auto text-center bg-white w-fit p-3 rounded-full mt-6'}>
-            <a href="/interactive-page-1" className={``}>Перейти в приложение</a>
+            <a href="/main-app" className={``}>Перейти в приложение</a>
         </div>
         <div
             className={`flex flex-col justify-between max-w-2xl border-2 border-transparent m-auto mt-10
@@ -83,24 +85,34 @@ export const ChatPage = () => {
                         }
                     )
                 }
+                {/*{*/}
+                {/*    answer ? <Message text={answer} isMy={false}/> : ""*/}
+                {/*}*/}
                 {
-                    answer ? <Message text={answer} isMy={false}/> : ""
+                    loading ?
+                        <Message text={"Загруэка"} isMy={false}/> :
+                        (answer ?
+                                <Message text={answer!} isMy={false}/>
+                                : ""
+                        )
                 }
             </div>
             <div className={'self-center w-full flex mt-3 h-12'}>
-                <input type="text" placeholder={'Type something'} className={'p-3 w-full rounded-2xl'}
+                <input type="text"
+                       placeholder={'Задайте вопрос. Например: Ты кто?'} className={'p-3 w-full rounded-2xl'}
                        ref={refInput}
                        onChange={e => {
                            setRequestText(e.currentTarget.value);
-                       }}/>
-                <button className={'bg-green-700 p-3 text-white rounded-2xl ml-2 disabled:bg-gray-700'}
-                        type={'button'} onClick={() => {
+                       }}
+
+                />
+                <button className={'bg-green-700 p-3 text-white rounded-2xl ml-2 disabled:bg-gray-700'}type={'button'} onClick={() => {
                     refInput!.current!.value = ""
                     if (answer) {
                         setMessages([...messages, {text: answer!, isMy: false}, {text: requestText!, isMy: true}])
                     } else
                         setMessages([...messages, {text: requestText!, isMy: true}])
-                    request()
+                    request().then(() => setLoading(false))
                 }}>GO
                 </button>
             </div>
