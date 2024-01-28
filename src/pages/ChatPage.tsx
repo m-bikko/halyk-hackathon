@@ -20,10 +20,13 @@ export const ChatPage = () => {
     const [requestText, setRequestText] = useState<string | undefined>(undefined)
     const refInput = useRef<HTMLInputElement>(null)
     const [loading, setLoading] = useState(false)
-
+    ref.current?.scrollIntoView({
+        behavior: "smooth",    block: "end",
+    });
     const request = async () => {
         setAnswer(undefined)
         setLoading(true)
+        
         const response = await fetch("https://rep-drab.vercel.app/aiCompletion", {
             method: "post",
             headers: {
