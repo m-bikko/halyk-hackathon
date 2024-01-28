@@ -22,7 +22,7 @@ export const ChatPage = () => {
 
     const request = async () => {
         setAnswer(undefined)
-        const response = await fetch("http://localhost:2000/aiCompletion", {
+        const response = await fetch("http://halyk-life-bot-api.vercel.app/", {
             method: "post",
             headers: {
                 Accept: "application/json, text/plain, */*",
