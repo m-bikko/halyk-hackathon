@@ -20,7 +20,7 @@ const Execution = () => {
     return (
         <div className="flex flex-col justify-center items-center">
             <div className="fixed w-full top-0 left-0 flex items-center py-4 bg-[#F7F7F7]">
-                <img className="" src="/icons/button-back.svg"/>
+                <img className="" src="/icons/button-back.svg" alt={''}/>
                 <div className="flex-1 text-[18px] font-bold text-center mr-4">Life Персона</div>
             </div>
 
@@ -39,7 +39,7 @@ const Execution = () => {
             </div>
 
             <select className="w-[90%] h-[50px] text-[#6D6D6D] pl-3 my-3 border rounded-lg">
-                <option>Территория страхования</option>
+                <option>Территория страхования</option>'
             </select>
             <select className="w-[90%] h-[50px] text-[#6D6D6D] pl-3 my-3 border rounded-lg">
                 <option>Срок страхования</option>
